@@ -1,0 +1,19 @@
+.chat-main
+  .chat-main__group-info
+    .main-header__leftbox
+      %h2.main-header_left-box_current-group{"data-group_id"=>"25406"}
+        maeda
+      %ul.main-header__leftbox_member-list
+        Member：
+        %li.main-header__leftbox-member-list_member maemae
+    %a{:href => "#"}
+      .main-header__edit-btn Edit
+  .chat-main__message-list
+  .chat-main__message-form
+    %chat-main__message-form
+    .input-box
+      %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+      %label{class: "input-box__image"}
+        = icon('fas', 'image')
+        %input{type: "file", class: "input-box__image__file"}
+    %input{type: "submit", class: "submit-btn ", value:'Send'} 

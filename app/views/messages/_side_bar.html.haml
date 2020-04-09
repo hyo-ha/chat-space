@@ -1,0 +1,17 @@
+.chat-side
+  .side-bar__user-name
+    .top-items
+      %p.top-items_name maemae
+      %ul.top-items_icons
+        %li.top-items_icons_newgroup
+          %a{:href => "#"}
+            %i.fa.fa-edit
+        %li.top-items_icons_edit-user
+          %a{:href => "#"}
+            %i.fa.fa-cog
+  .side-bar__group-list
+    = link_to "#", class:"group" do
+      %p.group__group-name
+        maemae
+      %p.group__latest-message
+        まだメッセージはありません
