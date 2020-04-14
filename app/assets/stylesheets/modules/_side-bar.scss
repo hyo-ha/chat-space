@@ -1,12 +1,12 @@
 .chat-side{
   width: 300px;
   float: left;
-  color: white;
+  color: $white;
   a {
-    color: white;
+    color: $white;
   }
   .side-bar__user-name{
-    background-color: #253141;
+    background-color: $side_gray_light;
     height: 100px;
     display: flex;
     align-items: center;
@@ -30,11 +30,11 @@
   }
   .side-bar__group-list{
     height: calc(100vh - 100px);
-    background-color: #2f3e51;
+    background-color: $side_gray_dark;
     padding: 20px 20px 0;
     overflow: scroll;
     .group {
-      color: white;
+      color: $white;
       margin-bottom: 40px;
       text-decoration: none;
       .group__group-name {
