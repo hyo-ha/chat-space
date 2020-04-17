@@ -6,8 +6,9 @@
       %ul.main-header__leftbox_member-list
         Member：
         %li.main-header__leftbox-member-list_member maemae
-    %a{:href => "#"}
-      .main-header__edit-btn Edit
+    .main-header__edit-btn
+      = link_to "#", class: "edit-btn__info" do
+        Edit
   .chat-main__message-list
   .chat-main__message-form
     %chat-main__message-form

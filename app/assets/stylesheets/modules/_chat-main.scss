@@ -19,11 +19,9 @@
         display: flex;
         font-size: 12px;
         color: $light_gray;
-        ;
       }
     }
-    a {
-      color: #38aef0;
+   
       .main-header__edit-btn {
         height: 40px;
         line-height: 40px;
@@ -32,8 +30,11 @@
         border: solid 1px $light_blue;
         position: absolute;
         right: 40px;
+        .edit-btn__info{
+          color: $light_blue;
+          text-decoration: none;
+        }
       }
-    }
   }
   .chat-main__message-list{
     height: calc(100vh - 190px);
