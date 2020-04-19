@@ -1,0 +1,17 @@
+.chat-side
+  .side-bar__user-name
+    .top-items
+      %p.top-items_name maemae
+      %ul.top-items_icons
+        %li.top-items_icons_newgroup
+          = link_to "#" , class: "new_group " do
+            = icon('fas','cog')
+        %li.top-items_icons_edit-user
+          = link_to "#" , class: "edit_user" do
+            = icon('fas','edit')
+  .side-bar__group-list
+    = link_to "#", class:"group" do
+      %p.group__group-name
+        maemae
+      %p.group__latest-message
+        まだメッセージはありません
