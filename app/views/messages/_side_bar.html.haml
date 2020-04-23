@@ -8,11 +8,13 @@
           = link_to edit_user_path(current_user) do
             = icon('fas','cog')
         %li.top-items_icons_edit-user
-          = link_to "#" , class: "edit_user" do
+          = link_to new_group_path do
             = icon('fas','edit')
   .side-bar__group-list
-    = link_to "#", class:"group" do
-      %p.group__group-name
-        maemae
-      %p.group__latest-message
-        まだメッセージはありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
