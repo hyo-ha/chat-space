@@ -2,12 +2,14 @@
   .chat-main__group-info
     .main-header__leftbox
       %h2.main-header_left-box_current-group
-        maeda
+         = @group.name
       %ul.main-header__leftbox_member-list
         Member：
+         - @group.users.each do |user|
+          = user.name
         %li.main-header__leftbox-member-list_member maemae
     .main-header__edit-btn
-      = link_to "#", class: "edit-btn__info" do
+      = link_to edit_group_path(@group.id), class: "edit-btn__info" do
         Edit
   .chat-main__message-list
   .chat-main__message-form
